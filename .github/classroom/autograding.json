@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Check Synchronization",
+      "setup": "javac src/SynchronizationDemo.java",
+      "run": "java -cp src SynchronizationDemo",
+      "input": "",
+      "output": "^(5\\s+10\\s+15\\s+20\\s+25\\s+100\\s+200\\s+300\\s+400\\s+500|100\\s+200\\s+300\\s+400\\s+500\\s+5\\s+10\\s+15\\s+20\\s+25)\\s*$",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}
